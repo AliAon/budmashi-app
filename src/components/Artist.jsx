@@ -21,7 +21,7 @@ const Artist = () => (
           <div
             className="w-[300px] sm:w-[200px] h-[400px] bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://budmashi.com/wp-content/uploads/al_opt_content/IMAGE/budmashi.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-05-at-11.21.30-PM.jpeg')",
+              backgroundImage: "url('https://res.cloudinary.com/djlpb1ld5/image/upload/v1739903032/gcywsif3hlrncfojrd9e.jpg')",
             }}
           ></div>
           <div style={{ fontFamily: "Orbitron, sans-serif" }} className="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white text-center py-2 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-[-50%]">
@@ -34,7 +34,7 @@ const Artist = () => (
           <div
             className="w-[300px] sm:w-[200px] h-[400px] bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://budmashi.com/wp-content/uploads/al_opt_content/IMAGE/budmashi.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-05-at-11.19.30-PM-1.jpeg')",
+              backgroundImage: "url('https://res.cloudinary.com/djlpb1ld5/image/upload/v1739903076/WhatsApp-Image-2025-01-05-at-11.19.30-PM-1_bmx5xy.jpg')",
             }}
           ></div>
           <div style={{ fontFamily: "Orbitron, sans-serif" }} className="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white text-center py-2 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-[-50%]">
@@ -47,7 +47,7 @@ const Artist = () => (
           <div
             className="w-[300px] sm:w-[200px] h-[400px] bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://budmashi.com/wp-content/uploads/al_opt_content/IMAGE/budmashi.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-05-at-11.19.31-PM.jpeg')",
+              backgroundImage: "url('https://res.cloudinary.com/djlpb1ld5/image/upload/v1739903113/WhatsApp-Image-2025-01-05-at-11.19.31-PM_fwqyqv.jpg')",
             }}
           ></div>
           <div style={{ fontFamily: "Orbitron, sans-serif" }} className="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white text-center py-2 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-[-50%]">
@@ -60,7 +60,7 @@ const Artist = () => (
           <div
             className="w-[300px] sm:w-[200px] h-[400px] bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://budmashi.com/wp-content/uploads/al_opt_content/IMAGE/budmashi.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-04-at-2.37.25-AM.jpeg')",
+              backgroundImage: "url('https://res.cloudinary.com/djlpb1ld5/image/upload/v1739903173/WhatsApp-Image-2025-01-04-at-2.37.25-AM_cmcm2z.jpg')",
             }}
           ></div>
           <div style={{ fontFamily: "Orbitron, sans-serif" }} className="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white text-center py-2 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-[-50%]">
