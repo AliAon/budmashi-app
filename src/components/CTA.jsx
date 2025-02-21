@@ -30,23 +30,31 @@ const CTA = () => {
     const mailtoLink = `mailto:info@budmashi.com.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
       `Name: ${name}\nCompany: ${company}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`
     )}`;
-  
+    console.log("mailtoLink" ,mailtoLink)
     window.location.href = mailtoLink;
+    setFormData({
+      name: '',
+      company: '',
+      phone: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
   };
   
   return (
     <section
     id="contact" 
       className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} rounded-[20px] box-shadow flex-col sm:flex-row`}
-      style={{ display: "flex", width: "100%", padding: "2rem" }}
+      style={{ display: "flex", width: "100%", padding: "3rem" }}
     >
       {/* Left Section: Heading */}
       <div
         style={{
           flex: 1,
           display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          // justifyContent: "center",
+          // alignItems: "center",
           padding: "20px",
           textAlign: "left",
         }}
@@ -56,7 +64,7 @@ const CTA = () => {
             CONTACT
           </p>
           <h1
-            className="mt-4 sm:mt-5 font-semibold text-white text-[28px] sm:text-[50px] leading-tight sm:leading-[50.8px]"
+            className="mt-4 sm:mt-5 font-semibold text-nowrap text-white text-[28px] sm:text-[50px] leading-tight sm:leading-[50.8px]"
             style={{ fontFamily: "Orbitron, sans-serif" }}
           >
             Ask A Question

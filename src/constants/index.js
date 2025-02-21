@@ -108,23 +108,23 @@ export const footerLinks = [
     links: [
       {
         name: "Home",
-        link: "",
+        link: "home",
       },
       {
         name: "About",
-        link: "",
+        link: "about",
       },
       {
         name: "Release",
-        link: "",
+        link: "releases",
       },
       {
         name: "Artist",
-        link: "",
+        link: "artists",
       },
       {
         name: "Contact Us",
-        link: "",
+        link: "contact",
       },
     ],
   },
@@ -177,13 +177,13 @@ export const socialMedia = [
 export const songs = [
   {
     id: 1,
-    name: "Tmhari Yaad",
+    name: "Tumhari Yaad",
     releaseDate: "27-12-2024",
     picture: yaad,
     availableOn: [
-      { name: "Spotify", icon: spotify, link: "https://open.spotify.com/" },
-      { name: "Apple Music", icon: music, link: "https://music.apple.com/" },
-      { name: "YouTube", icon: youtube, link: "https://www.youtube.com/" },
+      { name: "Spotify", icon: spotify, link: "https://open.spotify.com/album/5YkjcOzZ2C1jnOGsF9PeX8" },
+      { name: "Apple Music", icon: music, link: "http://itunes.apple.com/album/id/1783268106" },
+      { name: "YouTube", icon: youtube, link: "https://www.youtube.com/watch?v=FGMTAO_tU_s&list=OLAK5uy_kDoF1KdCx825MzDOZoPZOWm87r2_AJtss" },
     ],
   },
   {
@@ -192,9 +192,9 @@ export const songs = [
     releaseDate: "27-12-2024",
     picture: jaam,
     availableOn: [
-      { name: "Spotify", icon: spotify, link: "https://open.spotify.com/" },
-      { name: "Apple Music", icon: music, link: "https://music.apple.com/" },
-      { name: "YouTube", icon: youtube, link: "https://www.youtube.com/" },
+      { name: "Spotify", icon: spotify, link: "https://open.spotify.com/track/0b5UdT7luntBnkB6usTqJg?si=73b46b4e4f1e4c3b" },
+      { name: "Apple Music", icon: music, link: "http://itunes.apple.com/album/id/1783046920" },
+      { name: "YouTube", icon: youtube, link: "https://youtu.be/lM9xcSw0tsA?si=y2lDquhfAqxIZx40" },
     ],
   },
   {
@@ -203,7 +203,7 @@ export const songs = [
     releaseDate: "27-12-2024",
     picture: god,
     availableOn: [
-      { name: "Spotify", icon: spotify, link: "https://open.spotify.com/" },
+      { name: "Spotify", icon: spotify, link: "https://open.spotify.com/album/4zUWLu7sHKjZ1JDoRexbMn" },
       { name: "Apple Music", icon: music, link: "https://music.apple.com/" },
       { name: "YouTube", icon: youtube, link: "https://www.youtube.com/" },
     ],

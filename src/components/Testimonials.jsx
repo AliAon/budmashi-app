@@ -19,7 +19,7 @@ const Testimonials = () => (
     ></div>
 
     {/* Text container - Absolute for desktop, stacked for mobile */}
-    <div className="relative z-10 bg-primary bg-[#0e0837] p-2 sm:p-8 shadow-lg sm:absolute sm:top-0 sm:right-20 sm:w-[55%] w-[100%]  mx-auto sm:text-left rounded-lg sm:rounded-none">
+    <div className="relative z-10 bg-primary bg-[#0e0837] p-[1.5rem] sm:p-8 shadow-lg sm:absolute sm:top-0 sm:right-20 sm:w-[55%] w-[100%]  mx-auto sm:text-left rounded-lg sm:rounded-none">
       <p
         className="text-1xl text-left sm:text-left text-[#c2115c] font-semibold"
         style={{ fontFamily: "Orbitron, sans-serif" }}

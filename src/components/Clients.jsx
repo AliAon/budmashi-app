@@ -26,8 +26,8 @@ const Clients = () => (
           <thead>
             <tr >
               <th className="px-6 py-3 text-[10px] sm:text-lg text-left">Name of Song</th>
-              <th className="px-4 py-3 text-[10px] sm:text-lg text-right">Date of Release</th>
-              <th className="px-4 py-3 text-[10px] sm:text-lg text-right">Available On</th>
+              <th className="px-4 py-3 text-[10px] sm:text-lg text-left">Date of Release</th>
+              <th className="px-4 py-3 text-[10px] sm:text-lg text-start">Available On</th>
             </tr>
           </thead>
           <tbody className="" style={{ fontFamily: "Play, sans-serif" }}>
@@ -61,8 +61,8 @@ const Clients = () => (
   <span>{song.name}</span>
 </td>
 
-                <td className="px-4 py-2 sm:text-lg text-right text-[10px] font-bold">{song.releaseDate}</td>
-                <td className="px-4 py-2 flex justify-end space-x-4">
+                <td className="px-4 py-2 sm:text-lg text-left text-[10px] font-bold">{song.releaseDate}</td>
+                <td className="px-4 py-6 justify-start items-center  flex   space-x-3">
         {song.availableOn.map((platform) => (
           <a 
             key={platform.name} 
@@ -70,7 +70,7 @@ const Clients = () => (
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <Image src={platform.icon} alt={platform.name} className="w-[13px] sm:w-[20px] sm:h-[20px] h-[13px] cursor-pointer" />
+            <Image src={platform.icon} alt={platform.name} className="w-[13px] sm:w-[20px]   sm:h-[20px] h-[13px] cursor-pointer" />
           </a>
         ))}
       </td>

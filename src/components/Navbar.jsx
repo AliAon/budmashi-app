@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import close from "../../public/close.svg";
-import menu from "../../public/menu.svg";
+// import menu from "../../public/menu.svg";
 import Image from "next/image";
+import { IoClose } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { navLinks } from "../constants";
 import "@fontsource/play";
 import "@fontsource/orbitron";
@@ -79,14 +81,19 @@ const Navbar = () => {
       <div className="sm:hidden  flex flex-row items-center space-x-4 mr-4">
 
         {/* Menu Icon */}
-        <Image
-          src={toggle ? close : menu}
+        {/* <Image
+          src={toggle ? close : GiHamburgerMenu}
           alt="menu"
           className="w-[30px] h-[30px] object-contain cursor-pointer bg-[#007BFF] p-1 rounded-lg"
           onClick={() => setToggle(!toggle)}
           width={130}
           height={130}
-        />
+        /> */}
+         {toggle ? (
+          <IoClose size={40} onClick={() => setToggle(!toggle)} className="w-[30px] h-[30px] text-white  object-contain cursor-pointer bg-[#212064] p-1 rounded-lg"/> // Close Icon
+        ) : (
+          <GiHamburgerMenu size={40} onClick={() => setToggle(!toggle)}  className="w-[30px] h-[30px] text-white object-contain cursor-pointer bg-[#212064] p-1 rounded-lg" /> // Hamburger Menu Icon
+        )}
 
         {/* Mobile Sidebar */}
         <div

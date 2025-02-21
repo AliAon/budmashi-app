@@ -6,7 +6,7 @@ const Artist = () => (
     id="artists"
     className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
 
-    <div className="flex flex-col sm:flex-row  w-full justify-between">
+    <div className="flex flex-col sm:flex-row px-[4rem]   w-full justify-between">
       {/* Left Section: Artist Names */}
       <div className="w-full flex items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
         <p className="text-1xl text-[#c2115c] font-semibold" style={{ fontFamily: "Orbitron, sans-serif" }}>
@@ -55,7 +55,7 @@ const Artist = () => (
           </div>
         </div>
 
-        {/* Artist Card 4 */}
+        {/* Artist Card 4 ---*/}
         <div className="card flex flex-col items-center p-0 max-w-full sm:max-w-[300px] shadow-lg transform transition-all duration-500 hover:scale-110 hover:z-10 relative group">
           <div
             className="w-[300px] sm:w-[200px] h-[400px] bg-cover bg-center"

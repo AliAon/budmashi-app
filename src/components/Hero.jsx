@@ -9,11 +9,11 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative w-full h-screen flex items-center justify-center overflow-hidden" >
+    <section id="home" className="relative w-full sm:h-[400px] lg:h-[650px]  flex items-center justify-center overflow-hidden" >
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[97%] overflow-hidden">
         <video
-          className="w-full h-full absolute top-0 left-0 object-cover"
+          className="w-full h-full opacity-3 absolute top-0 left-0 object-cover"
           src={bgvideo}
           type="video/mp4"
           autoPlay
@@ -26,12 +26,12 @@ const Hero = () => {
       {/* Content Overlay */}
       <div className={`z-10 flex flex-col sm:flex-row items-center w-full text-white ${styles.paddingY} px-6 sm:px-20`}>
         {/* Left Side: Text Content */}
-        <div className="flex-[40%] text-left py-4 px-4 max-w-xs sm:max-w-lg mt-[12%]">
-  <div className="flex justify-start font-semibold items-center mt-[25%] mb-1 sm:mb-1" style={{ fontFamily: "Orbitron, sans-serif" }}>
+        <div className="flex-[40%] text-left py-4 px-4 max-w-xs sm:max-w-lg sm:mt-[24%] lg:mt-[50px]">
+  <div className="flex justify-start font-semibold items-center mt-[37%] lg:mt-[25%] mb-1 sm:mb-1" style={{ fontFamily: "Orbitron, sans-serif" }}>
     <p className="text-lg text-[#c2115c] font-orbitron">WELCOME</p>
   </div>
 
-  <h1 className="font-semibold text-[36px] sm:text-[55px] leading-[32px] sm:leading-[50.8px] font-orbitron" style={{ fontFamily: "Orbitron, sans-serif" }}>
+  <h1 className="font-semibold text-[36px] sm:text-[61px] leading-[32px] sm:leading-[50.8px] font-orbitron" style={{ fontFamily: "Orbitron, sans-serif" }}>
     Feel the Vibe, Create the Groove          
   </h1>
 
@@ -66,7 +66,7 @@ const Hero = () => {
 
 
         {/* Right Side: Image */}
-        <div className="flex-[60%] flex justify-center sm:justify-end sm:mt-0">
+        <div className="flex-[60%] flex justify-center sm:justify-end mt-0">
           <Image src={topright} alt="robot" className="max-w-[100%] sm:max-w-full object-contain" />
         </div>
       </div>

@@ -30,14 +30,14 @@ const Preloader = () => (
     initial={{ opacity: 0.5 }}
     animate={{ opacity: [0.5, 1, 0.5] }} // Blinking effect
     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-    className="sm:w-[19%]  h-full sm:h-[35%] "
+    className="sm:w-[20%] lg:w-[20%] lg:h-[40%]  h-full sm:h-[20%] "
   >
     <div className="w-[100%] h-[100%] flex justify-center items-center">
     <Image
       src={preloaserpng} // ✅ Correct way to reference public images in Next.js
       alt="hoobank"
       // ✅ Define height to prevent layout shift
-      className="sm:w-[80%] w-[70%] h-[90%] sm:h-[95%] "
+      className="sm:w-[20%] sm:h-[20%] lg:w-[100%] lg:h-[100%] xl:w-[100%] xl:h-[100%] "
     />
     </div>
    
@@ -53,7 +53,7 @@ const App = () => {
     // Simulate a loading delay
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 500);
   }, []);
 
   return (
