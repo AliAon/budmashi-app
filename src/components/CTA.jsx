@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from "../../style";
 import Button from "./Button";
 
@@ -24,22 +25,40 @@ const CTA = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    const { name, company, phone, email, subject, message } = formData;
-    
-    const mailtoLink = `mailto:info@budmashi.com.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-      `Name: ${name}\nCompany: ${company}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
-    console.log("mailtoLink" ,mailtoLink)
-    window.location.href = mailtoLink;
-    setFormData({
-      name: '',
-      company: '',
-      phone: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
+  
+    // Ensure these match your EmailJS configuration
+    const serviceID = "service_eqwwduu";
+    const templateID = "template_ykfj3j8";
+    const publicKey = "RsJ7KTR_fyeePU8kv";
+  
+    const templateParams = {
+      user_name: formData.name,   // Ensure variable names match your EmailJS template
+      user_company: formData.company,
+      user_phone: formData.phone,
+      user_email: formData.email,
+      user_subject: formData.subject,
+      user_message: formData.message,
+    };
+  
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        alert("Message sent successfully!");
+  
+        // Reset form
+        setFormData({
+          name: '',
+          company: '',
+          phone: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("Failed to send message. Try again later.");
+      });
   };
   
   return (
