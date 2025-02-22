@@ -5,7 +5,7 @@ const Billing = () => (
   <section
   id="about" 
   className={`${styles.paddingX} ${styles.paddingY}  ${styles.flexCenter} flex-col relative`}>
-  <div className="w-full flex  md:flex-row flex-col px-[3rem] sm:mb-16 mb-6 relative z-[1]">
+  <div className="w-full flex  md:flex-row flex-col lg:px-[3rem] px-[0px] sm:mb-16 mb-6 relative z-[1]">
   <div className="sm:w-full">
   <p className="text-1xl text-center  sm:text-left text-[#c2115c] font-semibold" style={{ fontFamily: "Orbitron, sans-serif" }}>
               ABOUT US

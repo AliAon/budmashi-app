@@ -46,7 +46,7 @@ const CTA = () => {
     <section
     id="contact" 
       className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} rounded-[20px] box-shadow flex-col sm:flex-row`}
-      style={{ display: "flex", width: "100%", padding: "3rem" }}
+      style={{ display: "flex", width: "100%", }}
     >
       {/* Left Section: Heading */}
       <div
@@ -55,9 +55,10 @@ const CTA = () => {
           display: "flex",
           // justifyContent: "center",
           // alignItems: "center",
-          padding: "20px",
+          // padding: "20px",
           textAlign: "left",
         }}
+        className="lg:px-[3rem] px-[0px]"
       >
         <div>
           <p className="text-1xl text-[#c2115c] font-semibold text-center sm:text-left" style={{ fontFamily: "Orbitron, sans-serif" }}>

@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
-      <div className={`${styles.flexStart} md:flex-row flex-col px-[3rem] mb-8 w-full`}>
+      <div className={`${styles.flexStart} md:flex-row flex-col lg:px-[3rem] px-[0px] mb-8 w-full`}>
         {/* Left Section: Logo and Description */}
         <div className="flex-1 flex flex-col justify-center items-center md:justify-start md:items-start text-center md:text-left relative">
           {/* Container with always glowing border */}
