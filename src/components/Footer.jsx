@@ -31,8 +31,8 @@ const Footer = () => {
           <div className="flex flex-col justify-center items-center p-5 border-8 border-[#d71461] shadow-lg relative 
                     transition-all duration-300 shadow-[0_0_15px_5px_#d71461]">
             {/* Overlay Image */}
-            <div className="flex flex-row items-center ml-8">
-              <Image src={logo} alt="Budmashi Studio" width={80} height={80} />
+            <div className="flex flex-row items-center ml-8 space-x-2">
+              <Image src={logo} alt="Budmashi Studio" width={40} height={40} />
               <p className="text-white text-[16px] leading-[17.8px]" style={{ fontFamily: "Play, sans-serif" }}>
                 BUDMASHI<br />STUDIO
               </p>
