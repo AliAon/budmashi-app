@@ -21,6 +21,8 @@ import "@fontsource/orbitron/700.css";
 import { motion } from "framer-motion"; // Import Framer Motion
 // import logo from "./logo.png"; // Ensure you have the correct path
 import preloaserpng from "../../public/preloaserpng.webp";
+import Head from "next/head";
+import Link from "next/link";
 
 // Preloader Component with Animation
 const Preloader = () => (
@@ -58,6 +60,9 @@ const App = () => {
 
   return (
     <>
+    <Head>
+      <Link rel="icon" href="/logo.png" />
+    </Head>
       {loading && <Preloader />}
       <div className={`bg-primary  w-full overflow-hidden ${loading ? "hidden" : "block"}`}>
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
